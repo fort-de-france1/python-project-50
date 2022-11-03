@@ -1,0 +1,11 @@
+from pathlib import Path
+
+result_gen_diff = "{" \
+                  "\n  - follow: False\n" \
+                  "    host: hexlet.io\n" \
+                  "  - proxy: 123.234.53.22\n" \
+                  "  - timeout: 50\n" \
+                  "  + timeout: 20\n" \
+                  "  + verbose: True" \
+                  "\n}"
+
