@@ -4,14 +4,14 @@ version = "0.1.0"
 description = ""
 authors = ["hex-learning <leontiytsagoiko@gmail.com>"]
 readme = "README.md"
-packages = [{include = "hexlet_python_package"}]
+packages = [{include = "diff"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
  
 
 [tool.poetry.scripts]
-gendiff = "hexlet_python_package.scripts.gendiff:main"
+gendiff = "diff.scripts.gendiff:main"
 
 [build-system]
 requires = ["poetry-core"]
