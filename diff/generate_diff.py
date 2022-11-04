@@ -32,5 +32,3 @@ def generate_diff(path1, path2):
         string += end + "\n"
     string += "}"
     return string
-
-
