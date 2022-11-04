@@ -1,17 +1,6 @@
 import json
-from pathlib import Path
 
 
-home_dir = Path.home()
-print(home_dir)
-cwd = Path.cwd()
-print(cwd)
-
-one_above = Path.cwd().parent
-print(one_above)
-
-joined_path = cwd / "file1.json"
-print(joined_path)
 def generate_diff(path1, path2):
     with open(path1) as f:
         file1 = json.load(f)
@@ -44,4 +33,4 @@ def generate_diff(path1, path2):
     string += "}"
     return string
 
-# print(generate_diff(""))
+
