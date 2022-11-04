@@ -19,7 +19,7 @@ jobs:
       - run: poetry --version
       
       - name: Install dependencies
-        run: make install
+        run: poetry install
 
       - name: Make tests
         run: poetry run pytest
