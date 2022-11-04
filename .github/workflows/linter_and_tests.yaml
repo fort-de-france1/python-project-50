@@ -25,6 +25,9 @@ jobs:
       - name: Run pytest
         run: |
           make test
+      - name: Run linter
+        run: |
+          make lint
       - name: Test & publish code coverage
         uses: paambaati/codeclimate-action@v2.7.4
         if: github.ref_name == 'main'
